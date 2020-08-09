@@ -1,56 +1,81 @@
-/* Style Settings */
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 :root {
     --bgColor: white;
     --accentColor: #39e09b;
-    --font: 'Karla', sans-serif;
+    --font: 'Josefin Sans', sans-serif;
 }
 
 body{
-    background-color: var(--bgColor);
+
 }
+/* ---- particles.js container ---- */
+
+#particles-js canvas {
+    display: block;
+    vertical-align: bottom;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+    -webkit-transition: opacity .8s ease, -webkit-transform 1.4s ease;
+    transition: opacity .8s ease, transform 1.4s ease;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url("https://i.imgur.com/IaqjCjh.jpg");
+    background-repeat: no-repeat;
+    background-size: auto 140%;
+    background-position: top;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+#wrapper {
+    margin: 100px auto 50px auto; /* 1 */
+    max-width: 960px; /* 2 */
+    padding-right: 10px; /* 3 */
+    padding-left:  10px; /* 3 */
+}
+
 
 #userPhoto{
-    width: 96px;
-    height: 96px;
+    width: auto;
+    height: 130px;
     display: block;
-    margin: 35px auto 20px;
-    border-radius: 50%;
-}
-
-#userName{
-    color: #bbb;
-    font-size: 1rem;
-    font-weight: 600;
-    line-height: 1.25;
-    display: block;
-    font-family: var(--font);
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
+    margin: 40px auto 20px;
 }
 
 #links{
-    max-width: 675px;
-    width: auto;
+    max-width: 500px;
+    width: 320px;
     display: block;
-    margin: 27px auto;
+    margin: 27px auto 20px;
 }
 .link{
     display: block;
-    background-color: var(--accentColor);
-    color: var(--bgColor);
+    background-color: #ffffff82;
+    color: #1c2a5e;
     font-family: var(--font);
+    backdrop-filter: blur(3px);
     text-align: center;
-    margin-bottom: 20px;
-    padding: 17px;
+    margin-bottom: 25px;
+    border-radius: 2rem;
+    padding: 12px;
     text-decoration: none;
-    font-size: 1rem;
-    transition: all .25s cubic-bezier(.08,.59,.29,.99);
-    border: solid var(--accentColor) 2px;
+    font-size: 19px;
+    transition: all .5s cubic-bezier(.08,.59,.29,.99);
+    border: #ffffff82 3px solid;
 }
 
 .link:hover{
-    background-color: var(--bgColor);
-    color: var(--accentColor);
+  color: #ffffff;
+  background-color: #1c2a5e;
+  font-weight: 800;
+  mix-blend-mode: overlay;
+  border: #ffffffbd 3px solid;
 }
